@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:5
 ADD package.json /app/
 WORKDIR /app
 RUN npm install
