@@ -1,0 +1,43 @@
+type Collection {
+  name: String
+  movies: Int
+}
+
+type Time {
+  minutes: Int
+  hours: Int
+  days: Int
+  year: Float
+  adjustedMinutes: Int
+}
+
+type Numbers {
+  actors: Int
+  composers: Int
+  directors: Int
+  genres: Int
+  languages: Int
+  productionCompanies: Int
+  writers: Int
+}
+
+type Stats {
+  actors: [Collection]
+  composers: [Collection]
+  directors: [Collection]
+  genres: [Collection]
+  languages: [Collection]
+  numbers: Numbers
+  productionCompanies: [Collection]
+  ratings: [Int]
+  rewatches: Movie
+  total: Int
+  # years: Years
+  wilhelms: Int
+  writers: [Collection]
+}
+
+extend type Query {
+  getStats: Stats
+  getUserStats: Stats
+}

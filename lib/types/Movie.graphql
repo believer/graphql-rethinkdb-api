@@ -1,0 +1,39 @@
+type Movie {
+  added: Int
+  averageRating: Float
+  awards: Awards
+  cast: [String]
+  countries: [String]
+  date: String
+  dates: [Date]
+  director: [String]
+  genres: [String]
+  id: String
+  ids: IDs
+  images: Images
+  languages: [String]
+  music: [String]
+  title: String
+  production_companies: [String]
+  rating: Int
+  ratings: Ratings
+  release_date: String
+  runtime: Int
+  tagline: String
+  title: String
+  user: User
+  wilhelm: Boolean
+  writer: [String]
+  year: String
+}
+
+extend type Query {
+  feed(skip: Int = 0, limit: Int = 50): [Movie]
+  getPerson(name: String!, type: String!): [Movie]
+  getMoviesWithRating(rating: Int, skip: Int = 0, limit: Int = 50): [Movie]
+  getUserLatest(id: String!, skip: Int = 0, limit: Int = 50): [Movie]
+  getUserMovies(id: String!, skip: Int = 0, limit: Int = 50): [Movie]
+  getUserWatchlist(id: String!): [Movie]
+  movies(skip: Int = 0, limit: Int = 50): [Movie]
+  movie(id: String!): Movie
+}

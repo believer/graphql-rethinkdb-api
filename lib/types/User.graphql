@@ -1,0 +1,9 @@
+type User {
+  email: String
+  id: String
+  password: String
+}
+
+extend type Query {
+  user(id: String!): User
+}

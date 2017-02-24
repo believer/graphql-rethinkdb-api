@@ -1,0 +1,46 @@
+type Awards {
+  nominations: Int
+  text: String
+  wins: Int
+}
+
+type IDs {
+  imdb: String
+  tmdb: String
+}
+
+type Images {
+  backdrop: String
+  poster: String
+}
+
+type Imdb {
+  rating: Float
+  votes: Int
+}
+
+type Metacritic {
+  rating: Int
+}
+
+type Tomatoes {
+  consensus: String
+  fresh: Int
+  image: String
+  meter: Int
+  rating: Int
+  reviews: Int
+  userMeter: Int
+  userRating: Float
+  userReviews: Int
+}
+
+type Ratings {
+  imdb: Imdb
+  metacritic: Metacritic
+  tomatoes: Tomatoes
+}
+
+type Date {
+  date: String
+}

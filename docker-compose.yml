@@ -1,0 +1,6 @@
+movies-rethink:
+  image: rethinkdb:2.3.5
+  command: 'rethinkdb --bind all'
+  ports:
+    - "8080:8080"
+    - "28015:28015"
