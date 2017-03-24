@@ -36,4 +36,5 @@ extend type Query {
   getUserWatchlist(id: String!): [Movie]
   movies(skip: Int = 0, limit: Int = 50): [Movie]
   movie(id: String!): Movie
+  search(title: String = "", actor: String = "", director: String = ""): [Movie]
 }
