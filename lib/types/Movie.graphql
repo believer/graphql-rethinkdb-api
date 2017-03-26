@@ -27,6 +27,10 @@ type Movie {
   year: String
 }
 
+extend type Mutation {
+  addMovie(id: String!, rating: Int!, date: String, userid: String!): Movie
+}
+
 extend type Query {
   feed(skip: Int = 0, limit: Int = 50): [Movie]
   getPerson(name: String!, type: String!): [Movie]

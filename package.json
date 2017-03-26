@@ -23,6 +23,9 @@
     "graphql-server-express": "^0.6.0",
     "graphql-tools": "^0.10.0",
     "lodash": "^4.3.0",
+    "moment": "^2.18.1",
+    "moviedb": "^0.2.7",
+    "omdb": "^0.7.0",
     "require-dir": "^0.3.1",
     "rethinkdb": "^2.2.1"
   }

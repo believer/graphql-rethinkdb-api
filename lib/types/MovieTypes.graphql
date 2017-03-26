@@ -20,7 +20,7 @@ type Imdb {
 }
 
 type Metacritic {
-  rating: Int
+  rating: Float
 }
 
 type Tomatoes {
